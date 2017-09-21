@@ -59,6 +59,13 @@ class ChargifyV2
     protected $apiSecret;
 
     /**
+     * Request Timeout
+     *
+     * @var int
+     */
+    protected $timeout = 30;
+
+    /**
      * Config used in constructor.
      *
      * @var array
@@ -94,11 +101,15 @@ class ChargifyV2
         $this->apiPassword = $config['api_password'];
         $this->apiSecret   = $config['api_secret'];
 
+        if (!empty($config['timeout'])) {
+            $this->timeout = $config['timeout'];
+        }
+
         // set up http client
         $this->httpClient = new Client([
             'base_uri' => $this->baseUrl,
             'handler'         => HandlerStack::create(),
-            'timeout'         => 10,
+            'timeout'         => $this->timeout,
             'allow_redirects' => false,
             'auth'            => [$this->apiId, $this->apiPassword],
             'headers'         => [

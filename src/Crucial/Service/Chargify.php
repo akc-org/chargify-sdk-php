@@ -86,7 +86,7 @@ class Chargify
      *
      * @var int
      */
-    protected $timeout = 10;
+    protected $timeout = 30;
 
     /*
      * json
