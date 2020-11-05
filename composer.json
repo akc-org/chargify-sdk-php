@@ -1,6 +1,6 @@
 {
-    "name": "bnt-ar/chargify-sdk-php",
-    "homepage": "https://github.com/BNT-AR/chargify-sdk-php",
+    "name": "akc-org/chargify-sdk-php",
+    "homepage": "https://github.com/AKC-ORG/chargify-sdk-php",
     "description": "Chargify SDK for PHP - Use the Chargify API in your PHP project. Fork of chargely/chargify-sdk-php",
     "keywords": [
         "chargify",
@@ -15,12 +15,11 @@
     "license": "Apache-2.0",
     "authors": [
         {
-            "name": "BNT-AR",
-            "homepage": "http://www.bravenew.tech"
+            "name": "AKC-ORG"
         }
     ],
     "support": {
-        "issues": "https://github.com/BNT-AR/chargify-sdk-php/issues"
+        "issues": "https://github.com/AKC-ORG/chargify-sdk-php/issues"
     },
     "require": {
         "php": ">=5.5.0",
